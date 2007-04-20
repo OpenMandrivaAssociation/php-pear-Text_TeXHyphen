@@ -3,12 +3,12 @@
 %define		_status		alpha
 %define		_pearname	%{_class}_%{_subclass}
 
-%define		_requires_exceptions pear(TEXT/TeXHyphen/Pattern.php)\\|pear(Text/TeXHyphen/ObjectHash.php)
+%define		_requires_exceptions pear(TEXT/TeXHyphen/Pattern.php)\\|pear(Text/TeXHyphen/ObjectHash.php)\\|pear(PHPUnit.php)
 
 Summary:	%{_pearname} - automated word hyphenation with the TeX algorithm
 Name:		php-pear-%{_pearname}
 Version:	0.1.0
-Release:	%mkrel 8
+Release:	%mkrel 9
 License:	PHP License
 Group:		Development/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
@@ -90,5 +90,3 @@ rm -rf %{buildroot}
 %{_datadir}/pear/%{_class}/*.php
 %{_datadir}/pear/%{_class}/%{_subclass}
 %{_datadir}/pear/packages/%{_pearname}.xml
-
-
