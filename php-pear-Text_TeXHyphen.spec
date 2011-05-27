@@ -6,7 +6,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	0.1.0
-Release:	%mkrel 14
+Release:	%mkrel 15
 Summary:	Automated word hyphenation with the TeX algorithm
 License:	PHP License
 Group:		Development/PHP
